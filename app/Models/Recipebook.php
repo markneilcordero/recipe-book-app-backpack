@@ -18,10 +18,18 @@ class Recipebook extends Model
     */
 
     protected $table = 'recipebooks';
-    // protected $primaryKey = 'id';
+    protected $primaryKey = 'recipe_id';
     // public $timestamps = false;
-    protected $guarded = ['id'];
-    // protected $fillable = [];
+    protected $guarded = ['recipe_id'];
+    protected $fillable = [
+        'recipe_name',
+        'description',
+        'ingredients',
+        'instructions',
+        'difficulty_level',
+        'cooking_time',
+        'servings',
+    ];
     // protected $hidden = [];
 
     /*
